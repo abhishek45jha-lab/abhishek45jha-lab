@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Jha | Cricket Portfolio</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #071326;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.portfolio {
+  width: min(1100px, 100%);
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 0 35px #249dff35;
+  animation: appear 1s ease;
+}
+
+.artwork {
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: breathe 7s ease-in-out infinite;
+}
+
+nav {
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+  max-width: 65%;
+}
+
+nav a {
+  color: white;
+  background: #101e39dd;
+  border: 1px solid #a6dfff;
+  border-radius: 7px;
+  padding: 9px 12px;
+  text-decoration: none;
+  font-size: clamp(10px, 1.5vw, 15px);
+  transition: .25s;
+}
+
+nav a:hover {
+  background: #ffad49;
+  color: #071326;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #ffad49;
+}
+
+.sections {
+  padding: 24px;
+  background: #0b1930;
+}
+
+section {
+  scroll-margin-top: 20px;
+  padding: 22px 10px;
+  border-bottom: 1px solid #294566;
+}
+
+h2 { color: #70ccff; }
+
+.project {
+  background: #142846;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #ffad49;
+  color: #071326;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.015); }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  body { padding: 8px; }
+  nav { top: 4%; right: 3%; gap: 4px; }
+  nav a { padding: 5px 6px; }
+  .sections { padding: 12px; }
+}
+</style>
+</head>
+
+<body>
+<div class="portfolio" id="home">
+
+  <!-- Uses your existing artwork from the profile repository -->
+  <img class="artwork"
+       src="https://raw.githubusercontent.com/abhishek45jha-lab/abhishek45jha-lab/main/cricket-world.png"
+       alt="Abhishek Jha anime cricket portfolio"
+       onerror="this.alt='Artwork could not load. Check the image URL.';">
+
+  <nav aria-label="Portfolio navigation">
+    <a href="#home">⌂ Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+<div class="sections">
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Abhishek Jha, a B.Tech Data Science student at SRM NCR.
+    I enjoy building technology projects and learning new skills.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Ageni — Industrial Fire Intelligence</h3>
+      <p>An AI-focused concept for industrial fire detection, risk intelligence
+      and supporting insurance evidence workflows.</p>
+    </div>
+    <div class="project">
+      <h3>Aid Link</h3>
+      <p>A concept connecting people with emergency assistance and volunteers.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>C++ · Python · Data Science · HTML · CSS · AI/ML</p>
+    <p>Currently learning and improving my development skills.</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements & Activities</h2>
+    <p>Hackathon participation, project prototyping and continuous learning.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Find my projects and code on GitHub.</p>
+    <a class="button"
+       href="https://github.com/abhishek45jha-lab"
+       target="_blank" rel="noopener">Visit My GitHub</a>
+  </section>
+</div>
+</body>
+</html>
