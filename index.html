@@ -97,10 +97,14 @@ h2 { color: #70ccff; }
 }
 
 @keyframes breathe {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.015); }
-}
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
 
+  50% {
+    transform: scale(1.035) translateY(-4px);
+  }
+}
 @keyframes appear {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
