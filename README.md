@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://abhishek45jha-lab.github.io/">
-  <img src="./cricket-world.png" alt="Abhishek Jha — Cricket Portfolio" width="100%">
+  <img src="./cricket-world-animated.gif" alt="Abhishek Jha — Animated Cricket Portfolio" width="100%">
 </a>
 
 # 🏏 Abhishek Jha
